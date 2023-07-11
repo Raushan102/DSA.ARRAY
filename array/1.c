@@ -25,6 +25,7 @@ int binarysearch(int arry[], int n, int k)
     return -1;
 }
 
+  
 int main()
 {
     int n;
@@ -66,7 +67,7 @@ int main()
     {
         printf("index %d=%d \t", i, a[i]);
     }
-
+ 
     for (int j = 0; j < n; j++)
     {
         for (int i = 0; i < n; i++)
@@ -83,13 +84,13 @@ int main()
     {
         printf("index %d=%d \t", i, a[i]);
     }
-    int pos1;
+     int pos1;
     printf("enterb  number of index which you want to delete");
     scanf("%d", &pos1);
 
     int number = binarysearch(a, n, pos1);
-    printf("%d", number);
-    for (int i = number - 1; i < n; i++)
+    printf("%d",number);
+     for(int i = number - 1; i < n; i++)
     {
         a[i] = a[i + 1];
     }
@@ -99,6 +100,7 @@ int main()
     {
         printf("index %d=%d \t", i, a[i]);
     }
+    
 
     return 0;
 }

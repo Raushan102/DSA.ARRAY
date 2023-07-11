@@ -51,7 +51,7 @@ int main()
             {
                 for (int j = 0; j < m; j++)
                 {
-                    if (a[i][j] > a[i][j] + 1)
+                    if (a[i][j] > a[i][j] + 1])
                     {
                         int temp = a[i][j];
                         a[i][j] = a[i][j + 1];
